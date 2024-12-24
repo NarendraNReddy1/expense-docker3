@@ -1,7 +1,9 @@
 version: '3.8'
 name: expense
 volumes:
-  mysql: /var/lib/mysql    
+  - mysql: /var/lib/mysql # -v volume-name:/path/in/container
+
+
 networks:
   default:
     name: expense
