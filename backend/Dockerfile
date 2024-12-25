@@ -5,7 +5,7 @@ RUN addgroup-Sexpense&&adduser-Sexpense-Gexpense
 RUN mkdir/opt/server
 RUN chownexpense:expense-R/opt/server
 WORKDIR /opt/server
-COPY package.json.
+COPY package.json .
 COPY *.js .
 RUN npm install
 CMD ["node","index.js"]
